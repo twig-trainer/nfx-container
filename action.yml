@@ -1,0 +1,14 @@
+name: 'container action'
+description 'action template'
+author: 'Twig Trainer'
+inputs:
+  myInput:
+    Description: 'first line'
+    required: true
+    default: 'default first line'
+outputs:
+  myOutput:
+    description: 'current totall memory'
+ runs:
+  using: 'docker'
+  image: 'Dockerfile'
