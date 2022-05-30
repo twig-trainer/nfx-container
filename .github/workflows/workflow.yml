@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     name: actions in workflow
     steps:
-    - name: run the checkout action
+    - name: stage 1 (run the checkout action)
       uses: actions/checkout@v2
-    - name: step 2
+    - name: stage 2 (Building docker image)
       id: test
       uses: ./
       with:
        myinput: 'change input to current'
-    - name:  output
+    - name: stage 3 (provide outputs)
       run: |
         echo ${{ steps.test.outputs.memory }}
         echo "current total memory in current env"
