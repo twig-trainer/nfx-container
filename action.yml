@@ -1,5 +1,5 @@
 name: 'container action'
-description 'action template'
+description: 'action template'
 author: 'Twig Trainer'
 inputs:
   myInput:
