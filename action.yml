@@ -3,12 +3,12 @@ description: 'action template'
 author: 'Twig Trainer'
 inputs:
   myInput:
-    Description: 'first line'
+    description: 'first line'
     required: true
     default: 'default first line'
 outputs:
   myOutput:
     description: 'current total memory'
- runs:
+runs:
   using: 'docker'
   image: 'Dockerfile'
