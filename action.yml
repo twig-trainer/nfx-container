@@ -8,7 +8,7 @@ inputs:
     default: 'default first line'
 outputs:
   myOutput:
-    description: 'current totall memory'
+    description: 'current total memory'
  runs:
   using: 'docker'
   image: 'Dockerfile'
