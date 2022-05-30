@@ -11,7 +11,7 @@ jobs:
       id: test
       uses: ./
       with:
-       myInput: 'end the stage 2'
+       myInput: '--------'
     - name: stage 3 (provide outputs)
       run: |
         echo ${{ steps.test.outputs.memory }}
