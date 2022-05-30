@@ -11,7 +11,7 @@ jobs:
       id: test
       uses: ./
       with:
-       myinput: 'change input to current'
+       myInput: 'change input to newOne'
     - name: stage 3 (provide outputs)
       run: |
         echo ${{ steps.test.outputs.memory }}
