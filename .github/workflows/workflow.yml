@@ -3,7 +3,7 @@ on: [push]
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    name: actions in workflow
+    name: job 1 in workflow
     steps:
     - name: stage 1 (run the checkout action)
       uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
   
   second-job:
     runs-on: ubuntu-latest
-    name: action 2 in workflow the same steps
+    name: job 2 in workflow the same steps
     steps:
     - name: stage 1 (run the checkout action)
       uses: actions/checkout@v2
