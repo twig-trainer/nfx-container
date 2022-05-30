@@ -5,11 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: actions in workflow
     steps:
-    - uses: actions/checkout@v2
-    - name: run the action
-     id: test
-     uses: ./
-     with:
+    - name: run the checkout action
+      uses: actions/checkout@v2
+    - name: step 2
+      id: test
+      uses: ./
+      with:
        myinput: 'change input to current'
     - name:  output
       run: |
