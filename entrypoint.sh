@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Hi $INPUT_MYINPUT"
+echo "start the script entrypoint.sh $INPUT_MYINPUT"
 memory=$(cat /proc/meminfo)
 echo "::set-output name=memory::$memory"
