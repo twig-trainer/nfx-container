@@ -16,4 +16,20 @@ jobs:
       run: |
         echo ${{ steps.test.outputs.memory }}
         echo "current total memory in current env"
+  
+  second-job:
+    runs-on: ubuntu-latest
+    name: action 2 in workflow the same steps
+    steps:
+    - name: stage 1 (run the checkout action)
+      uses: actions/checkout@v2
+    - name: stage 2 (Building docker image)
+      id: test
+      uses: ./
+      with:
+       myInput: 'end the stage 2'
+    - name: stage 3 (provide outputs)
+      run: |
+        echo ${{ steps.test.outputs.memory }}
+        echo "current total memory in current env"
        
