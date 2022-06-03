@@ -16,7 +16,11 @@ jobs:
       run: |
         echo ${{ steps.test.outputs.memory }}
         echo "current total memory in current env"
-  
+        echo ${{ steps.test.outputs.check_status1 }}
+        echo "check_status1 in current env"
+        echo ${{ steps.test.outputs.check_status2 }}
+        echo "check_status2 in current env"
+        
   second-job:
     runs-on: ubuntu-latest
     name: job 2 in workflow the same steps
